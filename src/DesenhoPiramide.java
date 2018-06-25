@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Piramide {
+public class DesenhoPiramide {
 
 	public static void main(String args[]) {
 
