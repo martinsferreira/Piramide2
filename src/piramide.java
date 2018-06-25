@@ -1,23 +1,27 @@
- 
-public class piramide{
+import javax.swing.JOptionPane;
 
+public class Piramide {
 
-public static void main(String args[]){
+	public static void main(String args[]) {
 
+		int i, k, j, tamanho = 0;
 
- int i,k,j,tamanho=4;
-       
-        for(i=1;i<=tamanho;i++) //para medir a quantidade de linhas
-        {
+		try {
+			tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite o numero de linhas"));
+		} catch (NumberFormatException e) {
+			System.out.println("tamanho invalido " + e);
+		}
+		for (i = 1; i <= tamanho; i++) {
 
-            for(j=i;j<tamanho;j++) //para printar espaço correspondente ao numero de linhas
-                System.out.print(" ");
-           
-            for(k=1;k<=i;k++)
-                System.out.print(" *");           
-                System.out.print("\n");                    
-        }
-       
-    }
+			for (j = i; j < tamanho; j++) // para printar espaço correspondente
+				System.out.print(" ");
+
+			for (k = 1; k <= i; k++)
+				System.out.print(" *");
+
+			System.out.print("\n");
+		}
+
+	}
 
 }
